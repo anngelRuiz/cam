@@ -1,0 +1,79 @@
+/* div[class*="col-lg-"]{
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.container-chart {
+    background-color: #FFF;
+}
+
+.container-chart .chart-title {
+    height: 40px;
+    background-color: #3277b2;
+}
+
+.container-chart .chart-title h5 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    font-size: 1.8rem;
+}
+
+.container-chart .chart-container {
+    position: relative; 
+    height:auto; 
+    width:70%; 
+    margin: 15px auto;
+    padding: 5%;
+}
+
+.container-table {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.container-table table th {
+    background-color: #3277b2;
+    color: #D8D8D8;
+    text-align: center;
+}
+
+
+.container-table table th ,.container-table table td{
+    width: 248px;
+}
+
+
+
+
+@media screen and (max-width:1175px) {
+    table tbody .row-buttons button {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .container-table {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container-chart .chart-container {
+        width:100%; 
+    }
+}
+
+@media screen and (max-width:710px) {
+    .wrapper tbody{
+        font-size:10px
+    }
+}

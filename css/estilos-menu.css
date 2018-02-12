@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.contenedorMenu {
+  width: 100%;
+  background-color: #333;
+  height: 1000px;
+  padding: 1%;
+  padding-left: 300px;
+  color: white;
+
+}
+
+.contenedorMenu h5 {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.contenedorMenu .menu-opciones {
+  width: 70%;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.contenedorMenu .menu-opciones .opcion {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-left: 50px;
+
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.contenedorMenu .menu-opciones .opcion:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.ver-alumnos {
+  width: 100%;
+  height: 100px;
+}
+
+.ver-alumnos .btn {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(30, 169, 228);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ver-alumnos .btn a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.ver-alumnos .btn:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}

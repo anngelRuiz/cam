@@ -1,0 +1,591 @@
+.contenedorJuego{
+  width: 100%;
+  height: 900px;
+  background-color: rgb(88, 88, 88);
+  background-image: url(../img-detalles/fondo-objetos.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+body: {
+	padding: 0;
+}
+
+canvas {
+  position: absolute;
+	display: none;
+  /*margin-top: 100px;*/
+  left: 0;
+  top: 0;
+}
+
+.mensajeFelicidaes {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 25%;
+  width: 50%;
+  height: 320px;
+  background-color: rgba(31, 55, 80, 0.78);
+  border: 1px solid rgba(38, 184, 194, 0.84);
+  padding: 2%;
+}
+
+.mensajeFelicidaes .imgFelicidades {
+  width: 70%;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.mensajeFelicidaes .imgFelicidades img {
+  width: 100%;
+  height: 100%;
+}
+
+.mensajeFelicidaes .captionFelicidades {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.mensajeFelicidaes .captionFelicidades  h5 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.containerItem {
+  display: none;
+  position: absolute;
+  bottom: 120px;
+  left: 30%;
+  width: 40%;
+  height: 200px;
+  background-color: rgba(31, 55, 80, 0.78);
+  border: 1px solid rgba(38, 184, 194, 0.84);
+}
+
+ .containerItem .imgConseguido {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+ .containerItem .imgConseguido img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: brinca 2s alternate infinite;
+}
+
+@-webkit-keyframes brinca {
+  0%, 50%{
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  50%, 100%{
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+.containerItem .imgConseguido h5 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contSalida {
+  display: none;
+  margin: 0 auto;
+  width: 270px;
+  height: 40px;
+  position: absolute;
+  bottom: 67px;
+  left: 42%;
+}
+
+a .btnSalidaJuego{
+  text-decoration: none;
+  float: left;
+}
+
+.btnSalidaJuego {
+  width: 100px;
+  height: 30px;
+  background-color: #24748e;
+  border-radius: 6px;
+  margin-left: 15px;
+  color: #fff;
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.btnSalidaJuego:hover {
+  background-color: #ececec;
+  color:#000;
+}
+
+.btnSalidaJuego h5 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+.contenedorJuego .arriba {
+  width: 100%;
+  height: 700px;
+
+}
+
+.contenedorJuego .arriba .sideOpciones {
+  width: 25%;
+  height: 700px;
+  position: relative;
+}
+
+.contenedorJuego .arriba .contenedorObjetos {
+  width: 75%;
+  height: 700px;
+}
+
+.contenedorJuego .arriba .sideOpciones, .contenedorJuego .arriba .contenedorObjetos {
+  float: left;
+}
+
+.contenedorJuego .arriba .sideOpciones .opcione {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 100px;
+  left: 180px;
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.contenedorJuego .arriba .sideOpciones .opcione:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contenedorJuego .arriba .sideOpciones .opcione a {
+  display: block;
+
+}
+
+.contenedorJuego .arriba .sideOpciones .opcione img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorJuego .arriba .contenedorObjetos .objeto {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin: 35px auto;
+  /*margin-top: 30px;*/
+  margin-left: 140px;
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.contenedorJuego .arriba .contenedorObjetos .objeto:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contenedorJuego .arriba .contenedorObjetos .objeto img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorJuego .arriba .contenedorObjetos .objeto h5 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.contenedorJuego .arriba .contenedorObjetos .objeto .precio {
+  position: relative;
+  margin-top: -18px;
+}
+.contenedorJuego .arriba .contenedorObjetos .objeto .precio img {
+  width: 125px;
+  height: 50px;
+}
+
+.contenedorJuego .arriba .contenedorObjetos .objeto .precio h5 {
+  position: absolute;
+  top: 5px;
+  left: 33px;
+}
+
+.contenedorJuego .arriba .contenedorObjeto {
+  width: 45%;
+  height: 650px;
+  margin: 30px auto;
+  background-color: rgb(34, 90, 142);
+  border-radius: 8px;
+  float: left;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .contenedorObtj {
+  width: 60%;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url(../img-detalles/fondoObjeto.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .contenedorObtj .imgObjeto {
+  width: 40%;
+  height: 140px;
+  margin: 0 auto;
+
+}
+
+.contenedorJuego .arriba .contenedorObjeto .contenedorObtj .imgObjeto img {
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .detalles {
+  width: 100%;
+  height: 130px;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .detalles .detallesIconos {
+  width: 40%;
+  height: 115px;
+  float: left;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .detalles .detallesIconos img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionesPago {
+  width: 100%;
+  height: 100px;
+  /*background-color: red;*/
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionesPago .opcioneAle {
+  width: 150px;
+  height: 50px;
+  float: left;
+  margin-left: 18px;
+  border-radius: 5px;
+  border: 1px solid rgb(52, 52, 52);
+  background-color: rgb(32, 168, 218);
+  display: none;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionesPago .opcioneAle a {
+  text-decoration: none;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionesPago .opcioneAle a button {
+  display: block;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 2rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid #26e2e8;
+  background-color: rgb(32, 168, 218);
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionesPago .opcioneAle a button:hover {
+  background-color: #4b5260;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionComprar {
+  width: 100%;
+  height: 100px;
+  /*background-color: red;*/
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionComprar a {
+  text-decoration: none;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionComprar a button {
+  display: block;
+  width: 180px;
+  height: 60px;
+  color: white;
+  font-size: 2rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  border: 1px solid #26e2e8;
+  background-color: rgb(29, 98, 133);
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.contenedorJuego .arriba .contenedorObjeto .opcionComprar a button:hover {
+  background-color: rgb(28, 123, 172);
+}
+
+.contenedorJuego .arriba .contenedorObjeto  .detallesObjeto {
+  width: 40%;
+  height: 105px;
+  color: rgb(236, 235, 235);
+  margin-top: 30px;
+  float: left;
+  padding-left: 30px;
+
+}
+
+.contenedorJuego .arriba .contenedorObjeto  .detallesObjeto h5{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.contenedorJuego .arriba .sideOpciones .contenedorBilletes{
+  width: 75%;
+  height: 400px;
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+}
+
+.contenedorJuego .arriba .sideOpciones .contenedorBilletes .mitadBilletes {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+
+
+.contenedorJuego .arriba .sideOpciones .contenedorBilletes .mitadBilletes .moneda {
+  width: 50%;
+  height: 70px;
+  margin-top: 5px;
+
+  -webkit-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.contenedorJuego .arriba .sideOpciones .contenedorBilletes .mitadBilletes .moneda:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contenedorJuego .arriba .sideOpciones .contenedorBilletes .mitadBilletes .moneda img {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorJuego .arriba .sideOpciones .contenedorBilletes .mitadBilletes .moneda.bill {
+  width: 90%;
+  height: 70px;
+}
+
+
+
+.contenedorJuego .arriba .contenedorPago {
+  width: 30%;
+  height: 680px;
+  float: left;
+  /*background-color: red;*/
+  position: relative;
+}
+
+.contenedorJuego .arriba .contenedorPago .pagoPos {
+  width: 90%;
+  height: 650px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  border-radius: 8px;
+  background-color: rgba(24, 80, 121, 1);
+}
+
+/* Btn Borrar box*/
+.contenedorJuego .arriba .contenedorPago .box-btn-erase {
+  position: absolute; 
+  right: 10px;
+  top: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: 40;
+
+  
+  -webkit-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.contenedorJuego .arriba .contenedorPago .box-btn-erase:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contenedorJuego .arriba .contenedorPago .box-btn-erase img{
+width: 100%;
+height: 100%;
+}
+
+.contenedorJuego .arriba .contenedorPago .dineroTotal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contenedorJuego .arriba .contenedorPago .dineroTotal h5 {
+  font-size: 1.5em;
+  font-family: serif;
+  text-align: center;
+}
+
+
+#billetes {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin: 10px 15px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.billete500{
+  background-image: url(../img-monedas/billquinienton.png);
+}
+
+.billete200{
+  background-image: url(../img-monedas/bills200.png);
+}
+
+.billete100{
+  background-image: url(../img-monedas/billete100.png);
+}
+
+.billete50 {
+  background-image: url(../img-monedas/billete50.png);
+}
+
+.billete20{
+  background-image: url(../img-monedas/billete20.png);
+}
+
+#monedas {
+  width: 100px;
+  height: 70px;
+  display: inline-block;
+  /*background-color: red;*/
+  margin: 10px 15px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+}
+
+.moneda10 {
+  background-image: url(../img-monedas/moneda10.png);
+}
+
+
+.moneda5 {
+  background-image: url(../img-monedas/5pesos.png);
+}
+
+.moneda2 {
+  background-image: url(../img-monedas/dospesos.png);
+}
+
+.moneda1 {
+  background-image: url(../img-monedas/unpesss.png);
+}
+
+.monedacinc {
+  background-image: url(../img-monedas/monedacin.png);
+}
+
+.contenedorJuego .arriba .contenedorPago .contMensajes {
+  position: absolute;
+  width: 80%;
+  height: 150px;
+  background-color: #3bd6e1;
+  border-radius: 4px;
+  bottom: 60px;
+  left: 40px;
+  border: 2px solid rgb(36, 36, 36);
+
+  -webkit-box-shadow: 20px 20px 5px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: 20px 20px 5px -11px rgba(0,0,0,0.75);
+  box-shadow: 20px 20px 5px -11px rgba(0,0,0,0.75);
+}
+
+.contenedorJuego .arriba .contenedorPago .contMensajes .captions {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedorJuego .arriba .contenedorPago .contMensajes .captions .imgContentCaption {
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: rgb(84, 200, 154);
+  border: 1px solid rgb(50, 50, 50);
+}
+
+.contenedorJuego .arriba .contenedorPago .contMensajes .captions .imgContentCaption img {
+  width: 100%;
+  height: 95%;
+}
+
+.contenedorJuego .arriba .contenedorPago .contMensajes .captions .captionColoca {
+  padding-left: 90px;
+  padding-top: 30px;
+}
+
+.contenedorJuego .arriba .contenedorPago .contMensajes .captions .captionColoca p {
+  text-align: center;
+  font-size: 2.150rem;
+  color:#fff;
+  font-family: serif;
+  /*text-shadow: 1px 1px 1px #000;*/
+}
+
+
+.contenedorJuego .arriba .contenedorPago .contMensajes .captions #conseguidoCaption {
+  background-color: rgb(30, 255, 18);
+}

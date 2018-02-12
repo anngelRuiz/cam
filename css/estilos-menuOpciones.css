@@ -1,0 +1,87 @@
+.contenedorAlum .introMenu {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.contenedorAlum .introMenu h5 {
+  float: left;
+  line-height: 100px;
+  margin-right: 40px;
+}
+
+.contenedorAlum .introMenu #imgProfe {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.menuOpciones {
+  width: 100%;
+  height: 350px;
+}
+
+.menuOpciones .opciones{
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin-left: 35px;
+}
+
+.menuOpciones .opciones img {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(78, 107, 133);
+  border-radius: 50%;
+
+  -webkit-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+
+.menuOpciones .opciones h5 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menuOpciones .opciones img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.contInventario {
+  width: 100%;
+  height: 200px;
+}
+/*******************************************************************************/
+a .btnInventario{
+  text-decoration: none;
+  float: left;
+}
+
+.btnInventario {
+  width: 160px;
+  height: 40px;
+  background-color: #24748e;
+  border-radius: 6px;
+  margin-left: 15px;
+  color: #fff;
+  margin-left: 31%;
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.btnInventario:hover {
+  background-color: #ececec;
+  color:#000;
+}
+
+.btnInventario h5 {
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 38px;
+}

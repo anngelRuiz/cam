@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+body {
+  /*background: #333 !important;*/
+  font-family: serif;
+  color: #000;
+  /* background-color: #f3f3f4; */
+}
+
+.graficaDoughnut {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.panel-footer {
+  background-color: #fff;
+}
+
+.contenedorGraficas {
+  /* background-color: #FFFFFF; */
+  padding: 1%;
+  padding-left: 300px;
+  /*color: white;*/
+  height: 2500px;
+}
+
+#noPadding{
+  padding-left: 0;
+}
+
+#noPadding a {
+  color: #375a7f;
+}
+
+#noPadding table {
+  margin-bottom:0;
+}
+
+#noPadding table td {
+  border: 1px solid #0ca6e3;
+  border: 1px solid #d9dada;
+  
+}
+
+.contenedorGraficas table{
+  text-align: center;
+}
+
+.contenedorGraficas table th , .contenedorGraficas table td{
+  width: 248px;
+}
+div.wrapper{
+  overflow:hidden;
+  overflow-y: scroll;
+  /* height: 500px;  */
+}
+
+div.wrapper::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+div.wrapper::-webkit-scrollbar
+{
+	width: 11px;
+	background-color: #F5F5F5;
+}
+
+div.wrapper::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #2BEAE5;
+}
+
+
+.contenedorGraficas .container-topic {
+  width: 100%;
+  height: 140px;
+  color: #FFF;
+  padding: 2%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.contenedorGraficas .container-topic .topic-icon {
+  height: 80px;
+  font-size: 6rem;
+}
+
+.contenedorGraficas .container-topic .topic-title {
+  height: 20px;
+  color: #3F3F3F;
+  border-radius: 6px;
+  background-color: #FFF;
+  text-transform: uppercase;
+}
+
+.contenedorGraficas .container-topic.one {
+  background-color: #2BBAE3;
+}
+
+.contenedorGraficas .container-topic.two {
+  background-color: #ff6384;
+}
+
+.contenedorGraficas .container-topic.tree {
+  background-color: #4bc0c0;
+}
+
+.contenedorGraficas .container-topic.four {
+  background-color: #ff9f40;
+}
+
+.contenedorGraficas .graficaDoughnut .contDatos{
+  width: 50%;
+  color: black;
+}
+
+.contenedorGraficas .graficaDoughnut .contDato .tablita {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenedorGraficas .graficaDoughnut .grafica {
+  width: 100%;
+  /* height: 500px; */
+  margin: 0 auto;
+  border-radius: 7px;
+  border: 1px solid rgb(213, 205, 205);
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  /* -webkit-box-shadow: 10px 10px 21px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 21px -5px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 21px -5px rgba(0,0,0,0.75); */
+}
+
+.contenedorGraficas .graficaDoughnut .grafica .graficaTitle {
+  position: relative;  
+  width: 100%;
+  height: 40px;
+  background-color: #3277b2;
+}
+
+.btn_printer{
+  width: 90px;
+  height: 30px;
+  color: #fff;
+  margin: 0 auto;
+  border-radius:4px;
+  cursor: pointer;
+  background-color: #4ca1dd;
+
+  text-align: center;
+  line-height: 30px;
+  -webkit-transition: ease all 0.4s;  
+  -moz-transition: ease all 0.4s;
+  -o-transition:ease all 0.4s ;
+  transition: ease all 0.4s;
+}
+
+.btn_printer:hover{
+  background-color: #357FB1;
+}
+
+/* .btn_printer img {
+  width: 100%;
+  height: 100%;
+} */
+
+
+.contenedorGraficas .graficaDoughnut .grafica .graficaTitle h5 {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  font-size: 1.8rem;
+}
+
+.contenedorGraficas .graficaDoughnut .table-bordered {
+  background-color: #FFFFFF;
+  color: #757474;
+}
+
+/* Nav Pages and th table */
+.contenedorGraficas .graficaDoughnut .table-bordered th, .pager li>a, .pager li>span {
+  color: #FFFFFF;
+  background-color: #3277b2;
+}
+
+.container-table-grades {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  color: white;
+  border-radius: 9px;
+}
+
+.container-table-grades table {
+  border-radius: 8px;
+}
+
+#tables-error{
+  display: none;
+}
+
+.container-table-grades table th {
+  background-color: #424141;
+  color: #D8D8D8;
+}
+
+/* Syltes for charts */
+.chart-container {
+  position: relative; 
+  height:auto; 
+  width:50%; 
+  margin: 15px auto;
+  /* padding: 3%; */
+}
+
+.chart-container.circle{
+  width:450px;
+  padding: 5%;
+  
+}
+
+/* btn small x to delete */
+.btn-delete{
+  position: absolute;
+  left: 25px;  
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-delete i{
+  color: rgb(65, 65, 65);  
+}
+
+.btn-delete i:hover {
+  color: rgb(187, 31, 31); 
+}
+
+@media screen and (max-width:560px) {
+  .chart-container.circle {
+    width:350px; 
+  }
+
+}
+
+@media screen and (max-width:450px) {
+  .chart-container ,.chart-container.circle {
+    width:270px; 
+  }
+
+}

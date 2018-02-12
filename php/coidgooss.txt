@@ -1,0 +1,33 @@
+// grafica, jalando normal sin datos de bd
+    var barChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+        labels:['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20'],
+        datasets: [
+            {
+            label: "Points",
+            data: [
+                1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20
+
+            ],
+            // borderColor: ['#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333','#333'],
+            backgroundColor:['#36a2eb','#ff6384','#9966ff','#ffcd56','#4bc0c0','#ff9f40','#c9cbcf','#f6d009','#ee63ff','#63d0ff', '#28d143', '#63ffc2',
+            '#9966ff','#ffcd56','#4bc0c0','#ff9f40','#c9cbcf','#f6d009','#ee63ff','#63d0ff'
+            ]
+            }
+        ]
+        }
+
+    });
+
+
+      // Sum all points to isnert into current_Score
+      $high_score  = 0;
+      $resa= $mysqli->query("SELECT SUM(puntacion) FROM puntaciones WHERE id_alumno = '$idAlmumno'") or die ($mysqli->error);
+      $raw=mysqli_fetch_array($resa);
+
+      $high_score = $raw['puntacion'];
+
+      //Insert into current_score 
+      $queryCurrent= "INSERT INTO current_score VALUES(NULL, '$idAlmumno', '$nombre', '$high_score', '$fecha')";
+      $mysqli->query ($queryCurrent) or die ($mysqli->error);

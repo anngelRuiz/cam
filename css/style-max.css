@@ -1,0 +1,117 @@
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow-x: hidden; }
+  
+  p {
+    font-size: 20px; }
+  
+  p.small {
+    font-size: 16px; }
+  
+  a,
+  a.active,
+  a:active,
+  a:focus,
+  a:hover {
+    color: #18BC9C;
+    outline: none; }
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+header.masthead {
+    width: 100%;
+    height: 105vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    background: #10D0D7; 
+}
+
+header.masthead.error{
+    width: 100%;
+    height: 105vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #505050;
+    background: #FFF; 
+}
+
+header.masthead img {
+    width: 300px;
+    height: 300px;
+}
+
+header.masthead .intro-text .name {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase; 
+}
+
+header.masthead .intro-text .name.errorCase {
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+    text-transform: none ; 
+}
+
+header.masthead hr.star-error{
+    border-top: 1px solid #797979;
+}
+
+header.masthead .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300; 
+}
+
+header.masthead .btn_container {
+    width: 50%;
+    height: 80px;
+    margin: 40px auto;
+}
+
+header.masthead .btn_container a{
+    display: block;
+    color:#EBEBEB;
+    font-weight: bold;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+header.masthead .btn_container .btn_continue {
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 0 auto;
+    border: 1px solid #C6C6C6;
+    background-color: #DF4545;
+
+    -webkit-transition: 0.7s all ease;
+    -o-transition: 0.7s all ease;
+    transition: 0.7s all ease;
+}
+
+header.masthead .btn_container .btn_continue:hover {
+    background-color: #EC2929;
+}
+@media (min-width: 768px) {
+    header.masthead .intro-text .name {
+        font-size: 2.6em; 
+    }
+
+    header.masthead .intro-text .skills {
+        font-size: 1.50em; 
+    } 
+}

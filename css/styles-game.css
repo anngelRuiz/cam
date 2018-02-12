@@ -1,0 +1,711 @@
+*{
+    box-sizing: border-box;
+}
+
+.all {
+    /* display: none; */
+}
+
+body{
+  background-image: url(../img-detalles/fondo-objetos.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.btn-home {
+  position: fixed;
+  width: 110px;
+  height: 110px;
+  bottom: 20px;
+  right: 20px;
+z-index: 50;
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.btn-home:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.btn-home a{
+  display: block;
+}
+
+.btn-home img {
+  width: 100%;
+  height: 100%;
+}
+
+.weather-card {
+    width: 325px;
+    height: 485px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.weather-card-landmark {
+    width: 100%;
+    height: 300px;
+    background-color: #FEF5D2;
+    position: relative;    
+    overflow: hidden;
+}
+
+/* .weather-card-landmark .box-img {
+    transform: scale(1.1)
+} */
+
+.weather-card-landmark .box-img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+.weather-card-landmark .box-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.weather-card-city-name {
+    color: rgb(228, 144, 20);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.weather-card-city-name h1 {
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+.weather-card-details {
+    color: rgb(94, 91, 91);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.opcionesPago {
+    display: none;
+    width: 90%;
+    position: absolute;
+    bottom: 2em;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* background-color: yellow; */
+    color: rgb(155, 39, 39);
+}
+
+.opcionesPago ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.opcionesPago ul li {
+    display: inline-block;
+    width: 22%;
+    height: 35px;
+    margin-left: 5px;
+    float: left;
+    text-align: center;
+    /* padding: 1em; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+    /* background-color: rgb(255, 255, 255); */
+    /* border: 1px solid rgb(110, 110, 110); */
+    border-radius: 5px;   
+}
+
+.opcionesPago ul li button {
+    width: 100%;
+    height: 100%;
+    background-color: #237fa0;    
+    
+    border-radius: 5px;    
+    border: 1px solid rgb(52, 52, 52);
+}
+
+.opcionesPago ul li button:hover {
+    background-color: rgb(32, 168, 218);    
+}
+
+.price {
+    font-size: 1em;
+    
+}
+
+.box-captions {
+    display: none;
+    height: 25px;
+}
+
+.box-captions h5 {
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.containter-super {
+    width: 485px;
+    height: 320px;
+    margin: 60px auto;
+}
+
+.containter-super .container-change {
+    width: 60px;
+    height: 320px;
+    float: left;
+    margin: 0 10px;
+}
+
+.containter-super .container-change.bills {
+    width: 60px;
+    height: 320px; 
+}
+
+
+.containter-super .container-change .moneda {
+    width: 60px;
+    height: 60px;
+}
+
+.containter-super .container-change .moneda img {
+    width: 100%;
+    height: 100%;
+}
+
+.containter-super .container-change .moneda.bill {
+    width: 90px;
+    height: 45px;
+    margin-top:15px;
+}
+
+.containter-super .container-change .moneda:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.containter-super .container-data  {
+    width: 325px;
+    height: 485px;
+    float: left;
+}
+
+/* Boton de compra style */
+.containter-super .container-data .opcionComprar {
+  width: 100%;
+  /*background-color: red;*/
+}
+
+.containter-super .container-data .opcionComprar a {
+  text-decoration: none;
+}
+
+.containter-super .container-data .opcionComprar a button {
+  display: block;
+  width: 100px;
+  height: 40px;
+  color: white;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #26e2e8;
+  background-color: rgb(29, 98, 133);
+  cursor: pointer;
+
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.containter-super .container-data .opcionComprar a button:hover {
+  background-color: rgb(28, 123, 172);
+}
+
+/* Lable del dinero total */
+
+.dineroTotal {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.dineroTotal h5 {
+  font-size: 1.7em;
+  font-family: serif;
+  text-align: center;
+}
+
+/* Caja de dinero colocado */
+
+.box-put {
+    position: relative;
+    width: 400px;
+    min-height: 300px;
+    margin: 10px auto;
+    background-color: #38454f;
+    border-radius: 8px;
+}
+
+.box-put .boxMoney {
+    float: left;
+    margin-left: 5px;  
+}
+
+
+.box-put .boxMoney.coinPut{
+    width: 40px;
+    height: 40px;
+}
+
+.box-put .boxMoney.billPut{
+    width: 60px;
+    height: 40px;
+}
+
+.box-put .boxMoney img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Caja dinero puesto */
+#billetes {
+  width: 50px;
+  height: 40px;
+  display: inline-block;
+  margin: 5px 8px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+.billete500{
+  background-image: url(../img-monedas/billquinienton.png);
+}
+
+.billete200{
+  background-image: url(../img-monedas/bills200.png);
+}
+
+.billete100{
+  background-image: url(../img-monedas/billete100.png);
+}
+
+.billete50 {
+  background-image: url(../img-monedas/billete50.png);
+}
+
+.billete20{
+  background-image: url(../img-monedas/billete20.png);
+}
+
+#monedas {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  /*background-color: red;*/
+  margin: 5px 8px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.moneda10 {
+  background-image: url(../img-monedas/moneda10.png);
+}
+
+
+.moneda5 {
+  background-image: url(../img-monedas/5pesos.png);
+}
+
+.moneda2 {
+  background-image: url(../img-monedas/dospesos.png);
+}
+
+.moneda1 {
+  background-image: url(../img-monedas/unpesss.png);
+}
+
+.monedacinc {
+  background-image: url(../img-monedas/monedacin.png);
+}
+
+/* Button erase money */
+.box-wrapp {
+    position: relative;
+    width: 400px;
+    margin: 10px auto;
+}
+.box-btn-erase {
+  position: absolute; 
+  right: -20px;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: 40;
+
+  -webkit-transition: 0.2s all ease;
+  -o-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.box-btn-erase:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.box-btn-erase img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Styles for FireWorks */
+
+canvas {
+    display: none;
+}
+
+.mensajeFelicidaes {
+    display: none;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    top: 16%;
+    width: 50%;
+    height: 320px;
+    background-color: rgba(31, 55, 80, 0.78);
+    border: 1px solid rgba(38, 184, 194, 0.84);
+    padding: 2%;
+}
+
+.mensajeFelicidaes .imgFelicidades {
+  width: 320px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.mensajeFelicidaes .imgFelicidades img {
+  width: 100%;
+  height: 100%;
+}
+
+.mensajeFelicidaes .captionFelicidades {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.mensajeFelicidaes .captionFelicidades  h5 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.containerItem {
+    display: none;
+    position: absolute;
+        margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    bottom: 14%;
+    width: 40%;
+    height: 200px;
+    background-color: rgba(31, 55, 80, 0.78);
+    border: 1px solid rgba(38, 184, 194, 0.84);
+}
+
+ .containerItem .imgConseguido {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+ .containerItem .imgConseguido img {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: brinca 2s alternate infinite;
+}
+
+@-webkit-keyframes brinca {
+  0%, 50%{
+    -webkit-transform: translateY(-40px);
+    -moz-transform: translateY(-40px);
+    -o-transform: translateY(-40px);
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+
+  50%, 100%{
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+.containerItem .imgConseguido h5 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contSalida{
+    display: none;    
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    bottom: 7%;
+    width: 270px;
+    height: 40px;
+}
+
+a .btnSalidaJuego{
+  text-decoration: none;
+  float: left;
+}
+
+.btnSalidaJuego {
+  width: 43%;
+  height: 30px;
+  background-color: #24748e;
+  border-radius: 6px;
+  margin-left: 15px;
+  color: #fff;
+
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.btnSalidaJuego:hover {
+  background-color: #ececec;
+  color:#000;
+}
+
+.btnSalidaJuego h5 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* ./ Syltes for FireWorks */
+
+@media screen and (max-width:1100px){
+    .mensajeFelicidaes {
+        top: 10%;
+        width: 90%;
+    }
+
+    .containerItem {
+        width: 75%;
+    }
+
+
+}
+
+
+@media screen and (max-width:700px) { 
+    .btn-home {
+      width: 80px;
+      height: 80px;
+    }
+
+    .mensajeFelicidaes {
+        height: 210px;
+    }
+
+    .mensajeFelicidaes .imgFelicidades {
+        width: 150px;
+        height: 130px;
+    }
+
+    .mensajeFelicidaes .captionFelicidades h5 {
+        font-size: 15px;
+    }
+
+    .containerItem {
+        width: 75%;
+        bottom: 19%;
+        height: 170px;
+        
+    }
+
+     .containerItem .imgConseguido {
+        width: 80px;
+        height: 80px;
+    }
+
+     .containerItem .imgConseguido h5 {
+        font-size: 13px;
+    }
+
+    .contSalida{
+        bottom: 9%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    body{
+        /* background-color: #34ab73; */
+        background-image: none;
+    }
+
+    .containter-super .container-data  {
+        width: 315px;
+    }
+
+    .containter-super .container-change {
+        margin: 0 0;
+    }
+
+    .box-put {
+        width: 450px;  
+    }
+    
+    .box-put .boxMoney.coinPut{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .box-put .boxMoney.billPut{
+        width: 50px;
+        height: 40px;
+    }
+
+    .box-wrapp {
+        width: 0;
+         margin: 0 0;
+    }
+
+    .box-btn-erase {
+ 
+        /* right: 0; */
+        top: -20px;
+        left: 0;
+
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .box-put {
+        width: 315px;  
+    }
+
+    .box-put .boxMoney {
+        margin-left: 0px;  
+    }
+    
+    .box-put .boxMoney.coinPut{
+        width: 23px;
+        height: 30px;
+    }
+    
+    .box-put .boxMoney.billPut{
+        width: 41px;
+        height: 40px;
+    }
+    
+}
+
+@media screen and (max-width:490px) {
+
+    .col-lg-2 {
+        padding-left: 0;
+    }
+
+    .btn-home {
+      width: 60px;
+      height: 60px;
+    }
+
+    .containter-super {
+        width: 330px;
+        margin-top: 20px;
+    }
+
+    .containter-super .container-data  {
+        width: 265px;
+        height: 410px;
+    }
+
+    .weather-card {
+        width: 265px;
+        height: 400px;
+    }
+
+    .weather-card-landmark {
+        height: 230px;
+    }
+
+    .weather-card-landmark .box-img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .box-put {
+        margin-top: 0px; 
+    }
+
+    .containter-super .container-change {
+        width: 38px;
+    }
+
+    .containter-super .container-change .moneda {
+        width: 38px;
+        height: 38px;
+        margin-top:10px;
+    }
+
+    .containter-super .container-change .moneda.bill {
+        width: 55px;
+        height: 45px;
+    }
+
+    .containter-super .container-change.bills {
+        width: 20px;
+    }
+
+    .price {
+        font-size: 0.8em;
+    }
+
+    .box-captions h5 {
+        margin-top: 2px;
+    }
+
+}

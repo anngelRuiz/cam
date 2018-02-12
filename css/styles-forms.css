@@ -1,0 +1,131 @@
+/* Syltes different css */
+.panel {
+  margin-top: 15px;
+  background-color: #f3f3f3;
+  color: #000;
+}
+
+.panel-heading{
+  background-color: #313131;
+  color: #fff;
+}
+
+button[type="submit"] {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-color: rgb(83, 84, 85);
+  border: none;
+  width: 110px;
+  height: 35px;
+  color: white;
+  cursor: pointer;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(80, 80, 80);
+}
+/* ./ Syltes different css */
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+ .login-form .panel-body .form-control {
+    display: inline-block;
+    width: 96%;
+  }
+
+  .login-form .panel-body .form-group span {
+    visibility: hidden;
+    display: inline-block;
+  }
+
+  .login-form .panel-body .form-group span i{
+    font-size: 2rem;
+    color: #06E24F;
+  }
+
+  input[type="file"]{
+    height: 45px;
+  }
+
+  ::-webkit-file-upload-button {
+    height: 30px;
+    background: #1089CF;
+    color: #FFFFFF;
+    border: 0px;    
+    border-radius: 3px;
+    padding: 0.4rem;
+  }
+
+  ::-webkit-file-upload-button:hover {
+    background: #06A1F5; 
+    cursor: pointer;
+  }
+  
+  .form input {
+    /* outline: 0; */
+    background: #f2f2f2;
+    width: 100%;
+    /* border: 0; */
+    margin: 0 0 15px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+  
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 5px 7px 5px 15px;
+    background: #fff;
+    color: #666;
+    border: 2px solid #ddd;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  .form button {
+    outline: 0;
+    background: #EF3B3A;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+
+  .log-status.wrong-entry .form-control, .wrong-entry .form-control {
+    border-color: #ed1c24;
+    color: #ed1c24;
+  }
+  
+  .log-status.wrong-entry {
+    -moz-animation: wrong-log 0.3s;
+    -webkit-animation: wrong-log 0.3s;
+    animation: wrong-log 0.3s;
+  }
+
+  .alert {
+    display: none;
+    text-align: center;
+    font-size: 12px;
+    color: #f00;
+    float: left;
+  }
