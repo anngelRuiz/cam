@@ -1,11 +1,9 @@
 <?php
 
-        $nombreusuario="u861415918_root";
-        $ps="root1234";
+        $nombreusuario="root";
+        $ps="";
         $servidor="localhost";
-        $basedatos="u861415918_cam";
-
-        // mysqli_select_db("subir_foto");
+        $basedatos="cam";
 
         $mysqli = new mysqli($servidor, $nombreusuario, $ps, $basedatos);
         if($mysqli->connect_error) {

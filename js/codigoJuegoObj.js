@@ -40,7 +40,7 @@ function Calcular(precio,idObjeto,idboy){
     setTimeout( "$('.box-captions').show('slow');", 300);
     $('#btnCalcular').hide();
 
-    $(".box-captions").css("background-color","#31c51f");
+    $(".box-captions").css("background-color","#f7b31c");
 
     $('.box-captions h5').text('Te sobra dinero!');
 
@@ -92,7 +92,7 @@ function Respuesta(res){
       $('.box-captions').hide('fast');
       setTimeout( "$('.box-captions').show('slow');", 300);
 
-      $(".box-captions").css("background-color","#31c51f");
+      $(".box-captions").css("background-color","#c72525");
 
 
       $('.box-captions h5').text('Opcion Incorrecta!');

@@ -626,8 +626,8 @@
       </div> <!-- /.row    contenedor de graficas   --> 
     </div>
 
-    <script src="./js/bootstrap.min.js"></script>	
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/ajax-libs-Chart-js-2-6-0.js"></script>
     <script src="./js/codigoGraficas.js"></script> 
     <script src="./js/prefixfree.min.min"></script>

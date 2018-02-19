@@ -153,8 +153,8 @@
       </div>
     </div> <!-- ./ Modal -->
 
+    <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery-3.2.1.min.js"></script>	
     <script src="./js/code-observacionesView.js"></script>
     <script src="./js/codigoGraficas.js"></script>
     <script>

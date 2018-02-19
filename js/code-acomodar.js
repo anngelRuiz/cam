@@ -4,8 +4,9 @@ var v = document.createElement("audio");
 
 $(document).ready(function(){
 
+    
 
-    /**Cantidad selecionada */
+    /* Cantidad selecionada */
     $('#centavos').on('click', function(){
         setDineroKey(0.5);
         setModals(); 
@@ -107,7 +108,7 @@ $(document).ready(function(){
     });
 
 
-    /**Moendas respuesta */
+    /* Monedas respuesta */
     $('.monedacin').on('click', function(){
         $('#message-alert').hide();        
         checkRes(0.5);
@@ -183,4 +184,5 @@ function checkRes(dinero){
 function setModals(){
     $('#wrapper-main').fadeIn();
     $('.box-message').hide(); 
+    $('#message-alert').hide(); 
 }

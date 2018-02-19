@@ -15,7 +15,7 @@
     <br>
     <div class="col-lg-4 col-lg-offset-3">
       <div class="lista-box">
-          <h5>Coloca los billetes para cada <small>Objeto</small></h5>
+          <h5>Coloca los billetes para cada <small>Objeto</small> <i class="fa fa-cubes" aria-hidden="true"></i></h5>
       </div>
     </div>
 
@@ -277,14 +277,14 @@
                     <!-- <img src="./img-detalles/trophy.svg" alt="" class="double" id="pop-img-win"> -->
                     <img src="./img-detalles/trophy.svg" alt="" class="double" id="pop-img-win">                    
                 </div>
-                <a class="popup-cerrar" href="#reu">X</a>
+                <a id="pop-btn-cerrar" class="popup-cerrar" href="#reu">X</a>
                 <h2 id="pop-price">Has elejido correctamente!</h2>
         </div> <!-- ./ modal - message win -->
 
     </div> <!-- ./ modal-wrapper -->
 
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script>
  
         window.addEventListener("load", function(){

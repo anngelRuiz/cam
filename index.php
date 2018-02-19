@@ -1,4 +1,4 @@
-<title>Alumnos</title>
+<title>CAM #8</title>
 <?php include ("head.php"); ?>
 
     <link rel="stylesheet" href="./css/estilos-side.css">
@@ -51,8 +51,8 @@
             <?php } ?>      
     </div><!-- ./ Container -->
 
+    <script src="./js/jquery-3.2.1.min.js"></script>    
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/jquery-3.2.1.min.js"></script>
     <script>
  
         window.addEventListener("load", function(){

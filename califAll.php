@@ -88,8 +88,8 @@
             </div> <!-- container-table -->
         </div><!-- col-lg-12 -->
     </div> <!-- row -->
-    <script src="./js/jquery-3.2.1.min.js"></script>
     
+    <script src="./js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./js/ajax-libs-Chart-js-2-6-0.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script>

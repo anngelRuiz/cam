@@ -3,7 +3,6 @@
 
     <link rel="stylesheet" href="./css/estilos-side.css">
     <link rel="stylesheet" href="./css/estilos-alumnos.css">
-    <!-- <link rel="stylesheet" href="./css/estilos-menuOpciones.css"> -->
     <link rel="stylesheet" href="./css/menu-alumno.css">
 
   </head>
@@ -56,8 +55,8 @@
         </div>
       </div>
 
-    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script>
  
         window.addEventListener("load", function(){
@@ -70,7 +69,7 @@
         }
     
     </script>  
-    <script src="./js/codigoIDs.js"></script>
+    <!-- <script src="./js/codigoIDs.js"></script> -->
   </body>
 
 </html>
